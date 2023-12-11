@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40">
+
+  <Worksheet ss:Name="SQL Statements">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">//-- Create the guvi_zen_class database</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">CREATE DATABASE guvi_zen_class;</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">//-- Use the created database</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">USE guvi_zen_class;</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">//-- Create the Students table</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">CREATE TABLE Students (</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">    student_id INT PRIMARY KEY AUTO_INCREMENT,</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">    name VARCHAR(100),</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">    email VARCHAR(100),</Data></Cell>
+      </Row>
+      <Row>
+        <Cell><Data ss:Type="String">    phone_number VARCHAR(20),</Data></Cell>
+      </Row>
+      <!-- Add other student-related fields here -->
+      <Row>
+        <Cell><Data ss:Type="String">);</Data></Cell>
+      </Row>
+      <!-- Repeat similar rows for other CREATE TABLE statements -->
+    </Table>
+  </Worksheet>
+
+</Workbook>
